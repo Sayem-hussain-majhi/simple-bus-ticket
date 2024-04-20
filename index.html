@@ -310,28 +310,33 @@
                             </article>
                         </div>
                         <article class="bg-slate-100 mt-3 rounded-sm p-3">
-                            <div class="">
+                            <div class="" id="hr-line">
                                 <table class="table">
                                   <!-- head -->
                                   <thead>
                                     <tr>
-                                      <th>Seat</th>
+                                      <th>Seat <span id="total-seat" class="px-2 bg-[#1DD100] rounded-md">0</span></th>
                                       <th>Class</th>
                                       <th>Price</th>
                                     </tr>
                                   </thead>
                                   <tbody id="seat-info">
                                     <!-- row 1 -->
-                                    <tr >
-                                      <td>C2</td>
-                                      <td>Economy</td>
-                                      <td>550</td>
-                                    </tr>
-                                   
-                                  </tbody>
+                                </tbody>
                                 </table>
                               </div>
-
+                              <article class="flex justify-between px-4 pt-1">
+                                <p class="font-bold text-[14px]">Total Price</p>
+                                <p  class="font-bold text-[14px]">BDT <span id="taka"></span></p>
+                            </article>
+                            <div class="my-4 relative">
+                                <input id="coupon-input" class="w-full rounded-md p-2 text-sm outline-none focus:outline-none focus:border-none"  placeholder="Have any coupon ?" type="text">
+                               <button id="coupon-btn" onclick="coupon()" class="text-xs text-white py-1 px-2 bg-[#1DD100] rounded font-semibold absolute top-2 right-3">APPLY</button>
+                            </div>
+                            <article class="flex justify-between px-4 pt-1">
+                                <p class="font-bold text-[14px]">Grand Total</p>
+                                <p  class="font-bold text-[14px]">BDT <span id="grand-taka"></span></p>
+                            </article>
                         </article>
                     </div>
                     
