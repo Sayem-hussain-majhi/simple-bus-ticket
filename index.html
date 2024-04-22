@@ -295,7 +295,7 @@
                                     class="w-full rounded-md p-2 text-sm outline-none focus:outline-none focus:border-none"
                                     placeholder="Have any coupon ?" type="text">
                                 <button id="coupon-btn" onclick="coupon()"
-                                    class="text-xs text-white py-1 px-2 bg-[#1DD100] rounded font-semibold absolute top-2 right-3">APPLY</button>
+                                    class="text-xs text-white py-1 px-2 bg-[#1cd100a8] rounded font-semibold absolute top-2 right-3" disabled>APPLY</button>
                             </div>
                             <article class="flex justify-between px-4 pt-1">
                                 <p class="font-bold text-[14px]">Grand Total</p>
@@ -306,13 +306,13 @@
                         <article>
                             <article>
                                 <p class="font-bold text-lg mt-5">Passenger Name<span>*</span></p>
-                                <input id="coupon-input"
+                                <input id="name-input"
                                     class="w-full rounded-md p-2 text-sm outline-none border-2 mt-2 focus:outline-none focus:border-2"
                                     placeholder="Enter your name" type="text">
                             </article>
                             <article>
                                 <p class="font-bold text-lg mt-5">Phone Number<span>*</span></p>
-                                <input id="coupon-input"
+                                <input id="number-input"
                                     class="w-full rounded-md p-2 text-sm outline-none border-2 mt-2 focus:outline-none focus:border-2"
                                     placeholder="Enter your mobile number" type="number">
                             </article>
@@ -323,7 +323,9 @@
                                     placeholder="Enter your mobile number" type="email">
                             </article>
                             <div>
-                                <button class="text-white font-bold w-full rounded-md bg-[#1DD100] py-2 mt-4">Next</button>
+                                <button id="next-btn"
+                                    class="text-white font-bold w-full rounded-md  py-2 mt-4 bg-[#1cd100a8]" disabled>Next</button>
+                                    <!-- 1DD100 -->
                             </div>
                             <article class="flex justify-between px-3 mt-2">
                                 <p class="text-gray-600 underline text-[12px]">Terms and conditions</p>
@@ -335,16 +337,36 @@
             </div>
         </section>
     </main>
-    <footer class="bg-black">
-      <div>
-        <article>
-            <h1 class="font-bold text-2xl text-white">S.Paribahan</h1>
-            <p class="text-gray-400 text-[14px]">P-Ticket is a digital platform to make your <br>
-                 daily commuting better.</p>
-        </article>
-        <div>
-            <p>Download our app</p>
+    <footer class="bg-black pb-3">
+      <div class="w-4/5 mx-auto">
+        <div class="flex justify-between pt-14 pb-5 border-b-2 border-dashed ">
+            <article>
+                <h1 class="font-bold text-2xl text-white pb-2">S.Paribahan</h1>
+                <p class="text-gray-400 text-[14px]">P-Ticket is a digital platform to make your <br>
+                    daily commuting better.</p>
+            </article>
+            <div >
+                <p class="text-white pb-2">Download our app</p>
+                <div class="flex gap-2 border-2 rounded-md p-2">
+                        <div class="w-[30px] flex">
+                            <img class="w-full" src="./images/playstore.png" alt="">
+                        </div>
+
+                        <article class="text-white p-0 ">
+                            <p class="text-[14px] font-semibold leading-none"><span class="text-[10px] p-0">GET IT ON <br></span> Google Play</p>
+                        </article>
+                        
+                </div>
+            </div>
         </div>
+        <article class="flex justify-between mt-6 mb-10">
+            <p class="text-[14px] text-gray-400">@all rights reserved, P-Ticket services limited.202</p>
+            <article class="flex gap-5 text-white">
+                <p class="text-[14px]">Terms & condition</p>
+                <p class="text-[14px]">Return & refund policy</p>
+                <p class="text-[14px]">Privacy policy</p>
+            </article>
+        </article>
       </div>
     </footer>
 
